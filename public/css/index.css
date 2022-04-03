@@ -577,3 +577,6 @@ body {
     font-size: 1.8em !important;
   }
 }
+.emoji-picker{
+  height: 350px;
+}

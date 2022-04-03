@@ -9,6 +9,7 @@
   <link href="/css/index.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
   <script src="/js/main.js" defer></script>
 </head>
 <body>
@@ -55,13 +56,13 @@
 
       <div class="row reply">
         <div class="col-sm-1 col-xs-1 reply-emojis">
-          <i class="fa fa-smile-o fa-2x"></i>
+          <i class="fa fa-smile-o fa-2x" id="emoji-trigger"></i>
         </div>
         <div class="col-sm-9 col-xs-9 reply-main">
           <textarea class="form-control" rows="1" id="comment"></textarea>
         </div>
         <div class="col-sm-1 col-xs-1 reply-recording">
-          <i class="fa fa-microphone fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-microphone fa-2x" aria-hidden="true" id="audioMessage"></i>
         </div>
         <div class="col-sm-1 col-xs-1 reply-send">
           <i class="fa fa-send fa-2x" aria-hidden="true" id="sendMessage"></i>
